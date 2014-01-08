@@ -15,7 +15,7 @@
       android:targetSdkVersion="17"/>
 
   <!--
-    - A single 'application' tag provides information about the app. Here we define the
+    - A single 'application' tag provides i'nformation about the app. Here we define the
     - name (as it appears in the Play store), the icon, and the general theme.
    -->
   <application
@@ -52,9 +52,13 @@
       - declared which means this activity can only be run from inside this app.
      -->
     <activity
-        android:name=".ui.LoginActivity"
-        android:label="@string/login_activity"
-        />
-
+      android:name=".ui.LoginActivity"
+      android:label="@string/login_activity"
+      />
+      <activity
+          android:name=".ui.MerchantActivity"
+          android:label="@string/merchant_activity"
+          />
   </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>
